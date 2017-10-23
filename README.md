@@ -1,4 +1,4 @@
-# Workflow Modern | Front-end
+# Workflow Modern | Front-end <3
 
 This repository for beginner front-end developer start your carreer with vanillaJS, gulp, bootstrap4, sass and test.
 
@@ -24,16 +24,17 @@ This repository for beginner front-end developer start your carreer with vanilla
 - [x] [SMACSS](https://smacss.com/)
 - [x] [Maintainable CSS](https://maintainablecss.com/)
 - [x] [CodeStyle](https://github.com/cristofersousa/modern-frontend/blob/master/CodeStyle.md)
+
 ### Run the project
 
-- `yarn global add gulp && gulp or npm install -g gulp-cli`
-- `git clone`
-- cd `modern-frontend`
-- `yarn install or npm install`
-- run `gulp`
+- 1 - `yarn global add gulp && gulp or npm install -g gulp-cli`
+- 2 - `git clone`
+- 3 - cd `modern-frontend`
+- 4 - `yarn install or npm install`
+- 5 - run `gulp`
 
 
-## Folders Structure
+### Folders Structure
 
 	├── README.md
 	├── LICENSE.md
@@ -64,16 +65,18 @@ This repository for beginner front-end developer start your carreer with vanilla
 - [ ] `$ gulp build`: Compile, concat and minify all files.
 - [ ] `$ gulp server`: Watch the files to build and start a static server.
 
-## Versioning
+### Versioning
 
 To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
 
-## Contributing
+### Contributing
+
 Find on our [roadmap](https://github.com/cristofersousa/modern-frontend/issues) the next steps of the project ;)
 <br>
 Want to contribute? [Follow these recommendations](https://github.com/cristofersousa/modern-frontend/blob/master/CONTRIBUTING.md).
 
-## License
+### License
+
 [MIT License](https://github.com/cristofersousa/modern-frontend/blob/master/LICENSE.md) © [Cristofer Sousa](http://cristofersousa.com.br/)
 
 
