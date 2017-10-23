@@ -6,15 +6,15 @@ const surge       = require('gulp-surge')
 
 
 
-gulp.task('deploy', [], function () {
+gulp.task('deploy', [], () => {
   return surge({
     project: './build',         // Path to your static build directory
     domain: 'example.surge.sh'  // Your domain or Surge subdomain
   })
-})
+});
 
 // Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
+gulp.task('sass', () => {
     return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
         .pipe(sass())
         .pipe(gulp.dest("src/css"))
@@ -24,7 +24,7 @@ gulp.task('sass', function() {
 
 // Move the javascript files into our /src/js folder
 gulp.task('js', () => {
-     gulp.src(['node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/popper.min.js', 'node_modules/tether/dist/js/tether.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js' ])
+     gulp.src(['node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist//umd/popper.js', , 'node_modules/tether/dist/js/tether.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js' ])
         .pipe(browserSync.stream())
         .pipe(babel({
             presets: ['env']
@@ -34,7 +34,7 @@ gulp.task('js', () => {
 
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass'], () => {
 
     browserSync.init({
         server: "./src"
