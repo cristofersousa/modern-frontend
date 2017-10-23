@@ -1,6 +1,6 @@
-# Front-end Modern
+# Workflow Modern | Front-end
 
-This repository for beginner front-end developer start your carreer with vanillaJS, gulp, bootstrap4  and sass.
+This repository for beginner front-end developer start your carreer with vanillaJS, gulp, bootstrap4, sass and test.
 
 ### Technology
 
@@ -21,6 +21,7 @@ This repository for beginner front-end developer start your carreer with vanilla
 
 - [x] [BEM](http://getbem.com/introduction/)
 - [x] [SMACSS](https://smacss.com/)
+- [x] [Maintainable CSS](https://maintainablecss.com/)
 
 ### Run the project
 
