@@ -16,6 +16,12 @@ This repository for beginner front-end developer start your carreer with vanilla
 - CSS Preprocessor: [Sass](http://stylus-lang.com/)
 - CSS Framework: [Bootstrap4](https://v4-alpha.getbootstrap.com/)
 
+### Methodologies
+> Patterns and writing for CSS
+
+- [x] [BEM](http://getbem.com/introduction/)
+- [x] [SMACSS](https://smacss.com/)
+
 ### Run the project
 
 - `git clone`
