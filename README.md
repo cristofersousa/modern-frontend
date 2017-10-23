@@ -23,7 +23,7 @@ This repository for beginner front-end developer start your carreer with vanilla
 - [x] [BEM](http://getbem.com/introduction/)
 - [x] [SMACSS](https://smacss.com/)
 - [x] [Maintainable CSS](https://maintainablecss.com/)
-- [x] [CodeStyle] (https://github.com/cristofersousa/modern-frontend/blob/master/CodeStyle.md)
+- [x] [CodeStyle](https://github.com/cristofersousa/modern-frontend/blob/master/CodeStyle.md)
 ### Run the project
 
 - `yarn global add gulp && gulp or npm install -g gulp-cli`
@@ -34,7 +34,6 @@ This repository for beginner front-end developer start your carreer with vanilla
 
 
 ## Folders Structure
-
 
 	├── README.md
 	├── LICENSE.md
