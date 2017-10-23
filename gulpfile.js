@@ -28,7 +28,7 @@ gulp.task('js', function() {
         .pipe(gulp.dest("src/js"))
         .pipe(browserSync.stream());
         .pipe(babel({
-            presets: ['es2015']
+            presets: ['env']
         }))
 });
 
