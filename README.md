@@ -1,8 +1,7 @@
 # Front-end Modern
 
-```
 This repository for beginner front-end developer start your carreer with vanillaJS, gulp, bootstrap4  and sass.
-```
+
 ### Technology
 
 - [x] Bootstrap4
