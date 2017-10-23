@@ -1,6 +1,6 @@
-# Workflow Modern | Front-end <3
+# Workflow Modern | Front-end
 
-This repository for beginner front-end developer start your carreer with vanillaJS, gulp, bootstrap4, sass and test.
+This repository for beginner front-end developer start your carreer with vanillaJS, gulp, bootstrap4, sass and test. <3
 
 ### Technology
 
