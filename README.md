@@ -9,13 +9,13 @@ This repository for beginner front-end developer start your carreer with vanilla
 - [x] Sass
 - [x] jQuery
 - [ ] Vue
-- [ ] Babel
 
 ### Stack
 - Package Manager: [Yarn](https://yarnpkg.com/pt-BR/)
 - Task Runner: [Gulp](http://gulpjs.com/)
 - CSS Preprocessor: [Sass](http://stylus-lang.com/)
 - CSS Framework: [Bootstrap4](https://v4-alpha.getbootstrap.com/)
+- JS Transpiler: [Babel](https://babeljs.io/docs/setup/#installation)
 
 ### Methodologies
 > Patterns and writing for CSS
@@ -23,13 +23,14 @@ This repository for beginner front-end developer start your carreer with vanilla
 - [x] [BEM](http://getbem.com/introduction/)
 - [x] [SMACSS](https://smacss.com/)
 - [x] [Maintainable CSS](https://maintainablecss.com/)
-
+- [x] [CodeStyle] (https://github.com/cristofersousa/modern-frontend/blob/master/CodeStyle.md)
 ### Run the project
 
+- `yarn global add gulp && gulp or npm install -g gulp-cli`
 - `git clone`
-- `npm install -g gulp-cli or yarn global add gulp && gulp`
+- cd `modern-frontend`
 - `yarn install or npm install`
-- run `gulp `
+- run `gulp`
 
 
 ## Folders Structure
@@ -51,10 +52,13 @@ This repository for beginner front-end developer start your carreer with vanilla
 	|   |        └── style.scss
     |   |          
 	|   └── index.html
+    |
 	├── gulpfile.js
 	├── package.json
 	├── .editorconfig
-	└── .gitignore
+    ├── .babelrc
+    └── .gitignore          
+
 
 ### Automatic Tasks
 
