@@ -1,7 +1,17 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
-const babel = require('gulp-babel');
+const babel       = require('gulp-babel');
+const surge       = require('gulp-surge')
+
+
+
+gulp.task('deploy', [], function () {
+  return surge({
+    project: './build',         // Path to your static build directory
+    domain: 'example.surge.sh'  // Your domain or Surge subdomain
+  })
+})
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {

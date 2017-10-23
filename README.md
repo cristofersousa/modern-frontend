@@ -16,6 +16,7 @@ This repository for beginner front-end developer start your carreer with vanilla
 - CSS Preprocessor: [Sass](http://stylus-lang.com/)
 - CSS Framework: [Bootstrap4](https://v4-alpha.getbootstrap.com/)
 - JS Transpiler: [Babel](https://babeljs.io/docs/setup/#installation)
+- Deploy: [Surge](https://surge.sh/)
 
 ### Methodologies
 > Patterns and writing for CSS
