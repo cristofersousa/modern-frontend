@@ -1,6 +1,7 @@
-let gulp        = require('gulp');
-let browserSync = require('browser-sync').create();
-let sass        = require('gulp-sass');
+const gulp        = require('gulp');
+const browserSync = require('browser-sync').create();
+const sass        = require('gulp-sass');
+const babel = require('gulp-babel');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
@@ -16,6 +17,9 @@ gulp.task('js', function() {
     return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js'])
         .pipe(gulp.dest("src/js"))
         .pipe(browserSync.stream());
+        .pipe(babel({
+            presets: ['es2015']
+        }))
 });
 
 
