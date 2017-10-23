@@ -4,12 +4,17 @@
   "main": "index.js",
   "author": "cristofer sousa",
   "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "jquery": "^3.2.1",
     "tether": "^1.4.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",

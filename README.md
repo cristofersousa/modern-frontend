@@ -9,6 +9,7 @@ This repository for beginner front-end developer start your carreer with vanilla
 - [x] Sass
 - [x] jQuery
 - [ ] Vue
+- [ ] Babel
 
 ### Stack
 - Package Manager: [Yarn](https://yarnpkg.com/pt-BR/)
@@ -55,10 +56,10 @@ This repository for beginner front-end developer start your carreer with vanilla
 	├── .editorconfig
 	└── .gitignore
 
-<!--## Automatic Tasks (in progress)
+### Automatic Tasks
 
- - `$ gulp build`: Compile, concat and minify all files.
-- `$ gulp server`: Watch the files to build and start a static server. -->
+- [ ] `$ gulp build`: Compile, concat and minify all files.
+- [ ] `$ gulp server`: Watch the files to build and start a static server.
 
 ## Versioning
 
