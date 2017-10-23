@@ -23,13 +23,13 @@ gulp.task('sass', function() {
 
 
 // Move the javascript files into our /src/js folder
-gulp.task('js', function() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js'])
-        .pipe(gulp.dest("src/js"))
-        .pipe(browserSync.stream());
+gulp.task('js', () => {
+     gulp.src(['node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/popper.min.js', 'node_modules/tether/dist/js/tether.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js' ])
+        .pipe(browserSync.stream())
         .pipe(babel({
             presets: ['env']
         }))
+      .pipe(gulp.dest("src/js"))
 });
 
 
