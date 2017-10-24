@@ -2,16 +2,24 @@ const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
 const babel       = require('gulp-babel');
-const surge       = require('gulp-surge')
+const surge       = require('gulp-surge');
+const runSequence = require('run-sequence');
 
 
 
-gulp.task('deploy', [], () => {
+gulp.task('deploy', ['build'], () => {
   return surge({
     project: './build',         // Path to your static build directory
     domain: 'example.surge.sh'  // Your domain or Surge subdomain
   })
 });
+
+gulp.task('build', () => 
+    runSequence([
+        'sass',
+        'js'
+    ])
+)
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', () => {
@@ -23,19 +31,36 @@ gulp.task('sass', () => {
 
 
 // Move the javascript files into our /src/js folder
-gulp.task('js', () => {
-     gulp.src(['node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist//umd/popper.js', 'js/helpers.js', 'node_modules/tether/dist/js/tether.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js' ])
+gulp.task('js', () => runSequence(['js:files' , 'js:vendor']))
+
+gulp.task('js:files', () => {
+    let files = [
+        'js/helpers.js'
+    ]
+
+    return gulp.src(files)
         .pipe(browserSync.stream())
         .pipe(babel({
             presets: ['env']
         }))
-      .pipe(gulp.dest("src/js"))
+        .pipe(gulp.dest("src/js"))
 });
+
+gulp.task('js:vendor', () => {
+    let vendors = [
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/popper.js/dist/umd/popper.js',
+        'node_modules/tether/dist/js/tether.js', 
+        'node_modules/bootstrap/dist/js/bootstrap.min.js'
+    ]
+
+    return gulp.src(vendors)
+        .pipe(gulp.dest('src/js'))
+})
 
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], () => {
-
+gulp.task('serve', () => {
     browserSync.init({
         server: "./src"
     });
@@ -44,4 +69,4 @@ gulp.task('serve', ['sass'], () => {
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['js','serve']);
+gulp.task('default', ['build', 'serve']);

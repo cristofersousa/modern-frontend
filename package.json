@@ -12,6 +12,7 @@
     "global": "^4.3.2",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.6",
+    "run-sequence": "^2.2.0",
     "surge": "^0.19.0",
     "tether": "^1.4.0"
   },
