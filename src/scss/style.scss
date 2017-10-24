@@ -1,6 +1,25 @@
-$bg-color:#92c9ff;
+$bg-color:#fff;
 
 body {
-  padding-top: 10px;
+  padding-top: 0;
   background-color: $bg-color;
 }
+
+.navbar{background-color:#e85647;}
+.navbar, a, p{color:#fff;}
+.navbar-default .navbar-brand {color: #fff;}
+.navbar-default .navbar-nav>li>a { color: #fff;}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { border-color: transparent;}
+.navbar-default { background-color: none;  border-color: transparent ;}
+section{background-color:#2c3e50;height:auto; padding-top:20px;}
+section p{letter-spacing:1px; line-height:16px;}
+h3{color:#e85647;}
+h1{color:#fff;}
+li .discos a:hover{color:#f1c40f; text-decoration:none;}
+span > a:hover{color:#f1c40f; text-decoration:none;}
+img{padding-bottom:20px;}
+.info{text-align:justi;}
+.panel-body p{color:#000;}
+.panel-body a{color:#000;}
+.input-group .form-control, .input-group-addon, .input-group-btn {}
+  footer{background-color:#e85647;}

@@ -9,12 +9,12 @@ const runSequence = require('run-sequence');
 
 gulp.task('deploy', ['build'], () => {
   return surge({
-    project: './build',         // Path to your static build directory
-    domain: 'example.surge.sh'  // Your domain or Surge subdomain
+    project: './src',         // Path to your static build directory
+    domain: 'ifsp.surge.sh'  // Your domain or Surge subdomain
   })
 });
 
-gulp.task('build', () => 
+gulp.task('build', () =>
     runSequence([
         'sass',
         'js'
@@ -50,7 +50,7 @@ gulp.task('js:vendor', () => {
     let vendors = [
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/popper.js/dist/umd/popper.js',
-        'node_modules/tether/dist/js/tether.js', 
+        'node_modules/tether/dist/js/tether.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js'
     ]
 
